@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Signup.css">
+    <title>Doroussi</title>
+</head>
+<body>
+    <div id="header" class="header">
+        <div id="navbar" class="navbar">
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-right">
+                <li><a href="/Home/index.html">الرئيسية</a></li>
+                <li><a href="#">الدروس</a></li>
+                <li><a href="/Home/index.html#subscriptions">الإشتراك</a></li>
+                <li><a href="/Home/index.html#description">من نحن</a></li>
+                <li><a href="/Home/index.html#footer">تواصل معنا</a></li>
+            </ul>
+            <ul class="nav-left">
+                <li id="phone-display-pc" class="phone-number"><a href="tel:0542581451"><img src="./assets/icons/phone-icon.png" alt="" height="16px" width="16px"> 0542 58 14 51</a></li>
+                <li id="phone-display-phone" class="phone-number"><a href="tel:0542581451"><img src="./assets/icons/phone-icon.png" alt="" height="16px" width="16px"></a></li>
+                <li><a href="/Authentification/Signin.html"><button class="signup_btn">التسجيل</button></li></a>
+                <li><button id="darkBtn" class="dark_btn"><img src="./assets/icons/sun-black.png" alt="" height="16px" width="16px"></button></li>
+            </ul>
+            <div class="logo">
+                <a href="/Home/index.html"><img class="nav-logo" src="" alt="LOGO"></a>
+            </div>
+        </div>
+    </div>
+    <form action="#">
+        <div class="input-container first-input">
+            <label for="firstName">الاسم</label>
+            <input class="input-entry" type="text" name="firstName" id="firstName" required autofocus>
+        </div>
+        <div class="input-container">
+            <label for="lastName">اللقب</label>
+            <input class="input-entry" type="text" name="lastName" id="lastName" required>
+        </div>
+        <div class="input-container">
+            <label for="email">البريد الإلكتروني</label>
+            <input class="input-entry" type="email" name="email" id="email" required>
+        </div>
+        <div class="input-container">
+            <label for="password">كلمة السر</label>
+            <input class="input-entry" type="password" name="password" id="password" required>
+        </div>
+        <div class="input-container">
+            <label for="password-re">تأكيد كلمة السر</label>
+            <input class="input-entry" type="password" name="password-re" id="password-re" required>
+        </div>
+        <div class="input-container checkbox-container">
+            <label for="checkbox-signup">أوافق على الشروط</label>
+            <input class="input-entry" type="checkbox" name="checkbox-signup" id="checkbox-signup" required>
+        </div>
+        <div class="login-underlinks">
+            <a href="/Authentification/Signin.html">لديك حساب؟ قم بالدخول الآن!</a>
+        </div>
+        <div class="form-btn">
+            <button type="submit">الدخول</button>
+        </div>
+    </form>   
+</body>
+<script src="Signup.js"></script>
+</html>
