@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Doroussi</title>
+</head>
+<body>
+    <div id="header" class="header">
+        <div id="navbar" class="navbar">
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-right">
+                <li><a href="/Home/index.html">الرئيسية</a></li>
+                <li><a href="#">الدروس</a></li>
+                <li><a href="/Home/index.html#subscriptions">الإشتراك</a></li>
+                <li><a href="/Home/index.html#description">من نحن</a></li>
+                <li><a href="/Home/index.html#footer">تواصل معنا</a></li>
+            </ul>
+            <ul class="nav-left">
+                <li id="phone-display-pc" class="phone-number"><a href="tel:0542581451"><img src="/Home/assets/icons/phone-icon.png" alt="" height="16px" width="16px"> 0542 58 14 51</a></li>
+                <li id="phone-display-phone" class="phone-number"><a href="tel:0542581451"><img src="/Home/assets/icons/phone-icon.png" alt="" height="16px" width="16px"></a></li>
+                <li><a href="/Authentification/Signin.html"><button class="signup_btn">التسجيل</button></li></a>
+                <li><button id="darkBtn" class="dark_btn"><img src="/Home/assets/icons/sun-black.png" alt="" height="16px" width="16px"></button></li>
+            </ul>
+            <div class="logo">
+                <a href="/Home/index.html"><img class="nav-logo" src="" alt="LOGO"></a>
+            </div>
+        </div>
+    </div>
+    <div class="dash-container">
+        <div class="dash-side-container">
+            <ul class="dash-side-list">
+                <li>الملف الشخصي</li>
+                <li>الدروس</li>
+                <li>الإشتراك</li>
+            </ul>
+        </div>
+        <div class="dashboard-content">
+            <div class="dash-profile">
+                <div class="profile-head">
+                    <img src="./assets/imgs/nodisplay.jpg" alt="">
+                    <h1>نزيم حشلاف</h1>
+                    <h3 class="user-status">مول الشي</h3>
+                </div>
+                <div class="profile-body">
+                    <div class="profile-entry">
+                        <h1>الولاية: </h1>
+                        <p>الجزائر</p>
+                    </div>
+                    <div class="profile-entry">
+                        <h1>المستوى: </h1>
+                        <p>جامعي</p>
+                    </div>
+                </div>
+                <div class="profile-footer">
+                    <button id="edit-btn" onclick="">التعديل</button>
+                    <button id="signout-btn" onclick="">الخروج</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="dashboard.js"></script>
+</html>
