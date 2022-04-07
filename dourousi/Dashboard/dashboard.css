@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Janna';
-    src: url(/dorossi/dourousi/Home/assets/fonts/janna/Janna-Regular.ttf);
+    src: url(/Home/assets/fonts/janna/Janna-Regular.ttf);
 }
 
 *{
@@ -166,7 +166,7 @@ html{
 }
 
 .dash-side-list{
-    border: var(--color) solid 2px;
+    border-left:  var(--color) solid 2px;
     padding-bottom: 30vh;
     width: 100%;
     list-style: none;
@@ -175,11 +175,24 @@ html{
 }
 
 .dash-side-list li{
-    padding: 10px 0;
+    padding: 5px 5px;
     padding-left: 10px;
-    border-bottom: var(--color) solid 2px;
     transition: 0.3s;
     cursor: pointer;
+}
+
+.side-header{
+    background-color: #6030b1;
+    color: #f3f3f3;
+    border-top: 2px solid var(--color);
+    border-bottom: 2px solid var(--color);
+    
+}
+
+.dash-side-list .side-header{
+    padding: 10px 10px;
+    cursor: default;
+    font-size: 24px;
 }
 
 .dash-side-list li:hover{
@@ -203,7 +216,7 @@ html{
 
 .profile-head{
     width: 50%;
-    margin: 75px auto;
+    margin: 50px auto 0px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -231,8 +244,8 @@ html{
 }
 
 .profile-body{
-    width: 100%;
-    margin: 100px auto;
+    width: 50%;
+    margin: 75px auto;
     display: flex;
     justify-content: space-evenly;
     font-family: Janna;
@@ -445,5 +458,52 @@ html{
 
     .nav-left #phone-display-phone img{
         max-width: 50%;
+    }
+
+    .dash-container{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .dash-side-container{
+        border: none;
+        padding: 0;
+        width: 100vw;
+        height: 10vh;
+        margin-top: 80px;
+        align-items: center;
+    }
+
+    .dash-side-list{
+        border: none;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    .dash-side-list li{
+        padding: 10px 20px;
+    }
+
+    .side-header{
+        display: none;
+    }
+
+
+    .dashboard-content{
+        width: 100vw;
+        border: none;
+        margin: 0;
+    }
+
+    .profile-body{
+        font-size: 12px;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px auto;
+    }
+
+    .profile-footer{
+        width: 60%;
     }
 }
