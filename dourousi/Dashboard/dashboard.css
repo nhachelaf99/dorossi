@@ -174,7 +174,7 @@ html{
     
 }
 
-.dash-side-list li{
+.side-list-item{
     padding: 5px 5px;
     padding-left: 10px;
     transition: 0.3s;
@@ -196,12 +196,12 @@ html{
     font-size: 24px;
 }
 
-.dash-side-list li:hover{
+.side-list-item:hover{
     background-color: #6030b1;
     color: #fff
 }
 
-.dash-side-list .li.active{
+.side-list-item.active{
     color: #fff;
     background-color: #6030b1;
 }
@@ -213,6 +213,14 @@ html{
     width: 80%;
     height: 100%;
     margin-top: 30px;
+}
+
+.dash-profile{
+    display: none;
+}
+
+.dash-profile.active{
+    display: block;
 }
 
 .profile-head{
@@ -303,6 +311,22 @@ html{
 
 #signout-btn:hover{
     background-color: #9e0202;
+}
+
+.dash-lessons-content{
+    display: none;
+}
+
+.dash-lessons-content.active{
+    display: block;
+}
+
+.dash-sub-content{
+    display: none;
+}
+
+.dash-sub-content.active{
+    display: block;
 }
 
 
@@ -482,7 +506,7 @@ html{
         padding: 0;
     }
 
-    .dash-side-list li{
+    .side-list-item{
         padding: 10px 20px;
     }
 
